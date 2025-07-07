@@ -1,10 +1,26 @@
-title: Dahye's Blog
-description: Welcome to my blog
-baseurl: "" 
+title: "Dahye's Blog"
+description: "A GitHub blog using Jekyll + GitBook theme"
+baseurl: ""
 url: "https://dahyeninohan.github.io"
 
-remote_theme: sighingnow/jekyll-gitbook
+remote_theme: "sighingnow/jekyll-gitbook"
 
-# 필수 구성 요소
 markdown: kramdown
 theme: null
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+paginate: 5
+paginate_path: "page:num"
+
+# 메뉴 구성 예시
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 3
+
+# 저자 정보
+author: "Dahye Nino Han"
